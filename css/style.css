@@ -35,7 +35,9 @@ body {
   ======================================*/
 
 
-.header {}
+.header {
+    padding: 38px 0;
+}
 
 .header__container {
     display: flex;
@@ -65,7 +67,7 @@ body {
 .menu__link {}
 
 .header__button {
-    flex: 0 0 252px;
+    flex: 0 1 252px;
 
 
     display: flex;
@@ -73,9 +75,26 @@ body {
     justify-content: flex-end;
 }
 
-.button {}
+.button {
+    display: inline-block;
+    background-color: #EC5863;
+    color: #FCFDFE;
+    padding: 14px 30px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
 
-.button__blue {}
+.button:hover {
+    background-color: #b81621;
+}
+
+.button__blue {
+    background-color: #4285F4;
+}
+
+.button__blue:hover {
+    background-color: #042c6c;
+}
 
 .main {
     flex: 1 1 100%;
