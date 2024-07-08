@@ -30,8 +30,52 @@ body {
     max-width: 1087px;
 }
 
+/*======================================
+        HEADER
+  ======================================*/
+
 
 .header {}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {}
+
+.header__menu {
+    flex: 1 1 auto;
+}
+
+.menu {}
+
+.menu__body {}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu__item {
+    margin-right: 40px;
+}
+
+.menu__link {}
+
+.header__button {
+    flex: 0 0 252px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button {}
+
+.button__blue {}
 
 .main {
     flex: 1 1 100%;
