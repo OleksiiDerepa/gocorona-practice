@@ -20,6 +20,17 @@ body {
     flex-direction: column;
 }
 
+/*======================================
+        GENERAL SETTINGS FOR CONTAINERS
+  ======================================*/
+[class*="__container"] {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px 0px 15px;
+    max-width: 1087px;
+}
+
+
 .header {}
 
 .main {
