@@ -1,0 +1,29 @@
+/* reset styles */
+@import './reset.css';
+
+@import url(https://fonts.googleapis.com/css?family=Rubik:regular,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,800&display=swap);
+
+body {
+    font-family: Rubik;
+    color: #616161;
+    font-size: 75%;
+    /* 12px/16 */
+}
+
+.wrapper {
+    overflow: hidden;
+
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {}
+
+.main {
+    flex: 1 1 100%;
+}
+
+.footer {}
