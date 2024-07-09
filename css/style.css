@@ -64,14 +64,22 @@ body {
 
 
 .header {
-    /* padding: 38px 0; */
+    /* открепляем хедер и закрепляем над следующим блоком */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* выставляем его перд всеми обьектами следующего блока  */
+    z-index: 50;
+    /* расстягиваем хедер на всю щирину экрана */
+    width: 100%;
 }
 
 .header__container {
+
     display: flex;
     align-items: center;
     min-height: 114px;
-
 }
 
 .header__logo {}
@@ -167,10 +175,11 @@ body {
     height: 100%;
     width: 100vw;
     border-radius: 30px 0 0 30px;
-
+    /* сдвигаем декор в право */
     transform: translate(100%, 0px);
 
     top: 0;
+    /* сдвигаем от правого края декор в левую сторону */
     right: 35%;
 
     background-color: #EC5863;
