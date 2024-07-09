@@ -113,6 +113,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    z-index: 5;
 }
 
 .button {
@@ -154,6 +156,24 @@ body {
 
 .takecare {
     background-color: #FAFBFD;
+    padding-bottom: 48px;
+    padding-top: 114px;
+    position: relative;
+}
+
+.takecare::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    border-radius: 30px 0 0 30px;
+
+    transform: translate(100%, 0px);
+
+    top: 0;
+    right: 35%;
+
+    background-color: #EC5863;
 }
 
 .takecare__container {
@@ -174,6 +194,7 @@ body {
 
 .takecare__picture {
     flex: 0 1 50%;
+    z-index: 5;
 }
 
 .takecare__picture img {
@@ -184,7 +205,6 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding-bottom: 48px;
 }
 
 .video-block {}
